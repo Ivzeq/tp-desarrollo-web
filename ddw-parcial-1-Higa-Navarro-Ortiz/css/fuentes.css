@@ -1,0 +1,24 @@
+@font-face {
+  font-family: 'PT Serif';
+  src:url(../fuentes/PT_Serif/PT_Serif-Web-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'PT Serif_bold';
+  src:url(../fuentes/PT_Serif/PT_Serif-Web-Bold.ttf);
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src:url(../fuentes/Roboto/Roboto-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Mate';
+  src:url(../fuentes/Mate/Mate-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Oswald';
+  src:url(../fuentes/Oswald/Oswald-Regular.ttf);
+}

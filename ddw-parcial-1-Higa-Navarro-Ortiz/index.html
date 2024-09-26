@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/superslides.css">
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
 </head>
 <body>
     <header>
@@ -12,54 +14,228 @@
             <a href="index.html">
                 <div class="home-container">
                     <img src="./img/company-logo.png" alt="home logo" class="home-logo">
-                    <span>Travel HNO</span>
+                    <span>Travel HNOS</span>
                 </div>
             </a>
             <div class="section-link-container">
                 <ul>
-                    <li><a href="">Nosotros</a></li>
-                    <li><a href="">Destinos</a></li>
-                    <li><a href="">Precios</a></li>
-                    <li><a href="">Contacto</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#ofrecemos">¿Qu&eacute; ofrecemos?</a></li>
+                    <li><a href="#destinos">Destinos</a></li>
+                    <li><a href="#footer">Contacto</a></li>
                 </ul>
             </div>
         </nav>
     </header>
     <main>
         <section class="main-banner">
-            <h1 className="main-title">BIENVENIDOS</h1>
+            <div id="slides">
+                <ul class="slides-container">
+                  <li>
+                    <img src="./img/foto1.jpeg" alt="Bariloche">
+                    <div class="description">
+                        <h2 class="title_bariloche">Escapada a San Carlos de Bariloche</h2>
+                    </div>
+                  </li>
+                  <li>
+                    <img src="./img/foto2.jpeg" alt="San martin de los andes">
+                    <div class="description">
+                      <h2 class="title_sanmartin">Viajes a San Martin de Los Andes</h2>
+                    </div>
+                  </li>
+                  <li>
+                    <img src="./img/foto3.jpeg" alt="Glaciar perito moreno">
+                    <div class="description">
+                      <h2 class="title_peritomoreno">Escapada al Glaciar Perito Moreno</h2>
+                    </div>
+                  </li>
+                  <li>
+                    <img src="./img/foto4.jpeg" alt="Usuahia">
+                    <div class="description">
+                      <h2 class="title_usuahia">Viajes a Usuahia</h2>
+                    </div>
+                  </li>
+                </ul>
+          
+                <nav class="slides-navigation">
+                  <a href="#" class="next">&#62;</a>
+                  <a href="#" class="prev">&#60;</a>
+                </nav>
+              </div>
         </section>
+
+    <section id="main">
+
+      <div id="nosotros" class="contenedor-about">
+        <div id="about">
+          <div class="contenedor-nosotros-tit scrollflow -slide-top -opacity">
+            <h2 class="title-nosotros">¿Qui&eacute;nes Somos?</h2>
+          </div>
+        </div>
+
+        <div class="contenedor-nosotros">
+          <section class="nosotros scrollflow -slide-top -opacity">
+            <article>
+              <p class="contenido_nosotros">
+                Somos una agencia y plataforma de reserva de viajes sostenible que conecta a viajeros conscientes con viajes de aventura.
+                Nuestra plataforma presenta una selección curada de viajes combinados sustentables diseñados y administrados por nuestros socios locales.
+                <br />
+                Nuestra agencia puede ayudarle a encontrar y reservar un viaje responsable a cualquier parte de la patagonia, o ayudarle a planificar su viaje sostenible.
+              </p>
+              <br />
+              <p class="contenido_nosotros">
+                Nuestra misión: 
+                <br />
+                Hacer que los viajes sostenibles sean fáciles.
+              </p>
+            </article>
+          </section>
+        </div>
+      </div>
+
+
+
+      <div id="ofrecemos" class="contenedor-ofrecemos">
+        <div id="ofrecemos2">
+          <div class="contenedor-ofrecemos-titulo scrollflow -slide-top -opacity">
+              <h2 class="ofrecemos-titulo">¿Qu&eacute; ofrecemos?</h2>
+          </div>
+        </div>
+
+
+          <section class="ofrecemos">
+            <div class="contenedor-ofrecemos">
+              <div class="experiencia  scrollflow -slide-top -opacity">
+                <figure class="perfil-pic scrollflow -slide-top -opacity">
+                <img class="img-experiencia" src="./img/foto5.jpeg" alt="experiencia">
+              </figure>
+                </br/></br/>
+                <div><p class="titulo-experiencia">Las experiencias m&aacute;s populares</p></div>
+              </div>
+              <div class="atracciones scrollflow -slide-top -opacity">
+                <figure class="perfil-pic scrollflow -slide-top -opacity">
+                <img class="img-atracciones"  src="./img/foto6.jpeg" alt="atracciones">
+              </figure>
+                </br/></br/>
+                <div><p class="titulo-atracciones">Las atracciones m&aacute;s populares</p></div>
+              </div>
+            </div>
+            <div class="contenedor-ofrecemos2">
+              <div class="deseos scrollflow -slide-top -opacity">
+                <figure class="perfil-pic scrollflow -slide-top -opacity">
+                <img class="img-deseos" src="./img/foto7.jpeg" alt="deseos">
+              </figure>
+                </br/></br/>
+                <div><p class="titulo-deseos">Lista de deseos</p></div>
+              </div>
+              <div class="contenedor-cultural scrollflow -slide-top -opacity">
+                <figure class="perfil-pic scrollflow -slide-top -opacity">
+                <img class="img-cultural" src="./img/foto8.jpeg" alt="cultural">
+              </figure>
+                </br/></br/>
+                <div><p class="titulo-cultural">Cultural e hist&oacute;rico</p></div>
+              </div>
+          </section>
+        </div>
+    </section>
+    <section>
+      <div id="destinos" class="contenedor-servicios">
+
+        <div id="servicios">
+        <div class="contenedor-servicios-titulo scrollflow -slide-top -opacity">
+            <h2 class="servicios-titulo">Viaj&aacute; al Sur Argentino</h2>
+        </div>
+        </div>
+      </div>
+
+      <div class="cont-serv-img">
+        <div class="serv-img">
+          <div class="cont-disdev scrollflow -slide-top -opacity">
+            <h6 class="titulo-service">Bariloche</h6>
+            <br/>
+              <p class="serv-resumen">Es la ciudad más grande de la región, y el punto obligado para hacer base si te interesa el senderismo.
+
+                Situada en las orillas del Lago Nahuel Huapi, es un paraíso con infinidad de opciones para explorarlo.
+                
+                Estando en Bariloche también podés visitar otros dos destinos cercanos que seguramente te encantarán: Villa La Angostura y San Martín de los Andes recorriendo la fantástica Ruta de los 7 lagos.</p>
+          </div>
+          <div class="cont-disdev scrollflow -slide-top -opacity">
+            <h6 class="titulo-service">San Martin de los Andes</h6>
+            <br/>
+              <p class="serv-resumen">Situado en la provincia de Neuquén y a orillas del Lago Lácar, San Martín de los Andes es uno de los lugares más lindos para visitar en Argentina. Su entorno natural, 
+                rodeado de lagos y montañas, lo hace un destino ideal para cualquier época del año. Además, su ubicación estratégica hace que puedas combinar tu viaje con otros lugares imprescindibles de la región, 
+                como Bariloche o Villa La Angostura.</p>
+          </div>
+          <div class="cont-disdev scrollflow -slide-top -opacity">
+            <h6 class="titulo-service">Glaciar Perito Moreno</h6>
+            <br/>
+              <p class="serv-resumen">En el vasto y diverso territorio de Argentina, un gigante de hielo se erige como una de las maravillas naturales más impresionantes del mundo: el Glaciar Perito Moreno. 
+                Ubicado en la provincia de Santa Cruz, dentro del Parque Nacional Los Glaciares, este coloso helado no solo es un espectáculo para la vista, sino también un fascinante estudio de la naturaleza 
+                y la ciencia en acción. 
+              </p>
+          </div>
+          <div class="cont-disdev scrollflow -slide-top -opacity">
+            <h6 class="titulo-service">Usuahia</h6>
+            <br/>
+              <p class="serv-resumen">Para muchos, llegar a Ushuaia es mucho más que un simple destino: es llegar a la ciudad más austral del mundo. El sur del sur, donde realmente uno puede sentir la magia.
+                Ushuaia está en la Isla de Tierra del Fuego, y para llegar por tierra tendrás que pasar por una partecita de Chile. Situada justo sobre el Canal Beagle, 
+                hacer una navegación por sus aguas es más que recomendable para poder ver cormoranes, lobos marinos y pingüinos.
+              </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
     </main>
+
+    <div class="contenedor-patagonia">
+      <div class="patagonia">
+        <img src="./img/patagonia.jpeg" alt="foto16">
+      </div>
+    </div>
+
+    <!---FOOTER--->
+
     <footer>
-        <div class="footer">
+        <div id="footer">
             <div class="contenedor_redessociales">
                 <h4>Redes sociales</h4>
                 <ul>
-                    <li><a href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.facebook.com/%3Flocale%3Des_LA&ved=2ahUKEwiCjJu25tKIAxU2ppUCHeZaOvMQFnoECAkQAQ&usg=AOvVaw1I60-Ja6y72-wCvsxEihv7">Facebook</a><img src="./img/facebook.png" alt="icono de facebook"></li>
-                    <li><a href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://m.youtube.com/%3Fhl%3Des&ved=2ahUKEwj-0be95tKIAxXjiJUCHYSuHvwQFnoECAsQAQ&usg=AOvVaw3zMzKvNQGAsWaZEJ7v5pXI">Youtube</a><img src="./img/Youtube.png" alt="icono de Youtube"></li>
-                    <li><a href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.instagram.com/&ved=2ahUKEwijkYrC5tKIAxUvppUCHWAGGXYQFnoECAsQAQ&usg=AOvVaw1cBeRoOpMhZ3-x5M1sA3Fm">Instagram</a><img src="./img/Instagram.png" alt="icono de instagram"></li>    
+                    <li><a href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://ar.linkedin.com/&ved=2ahUKEwimt9zL5tKIAxX6q5UCHRI9IXIQFnoECAsQAQ&usg=AOvVaw3WCPIlTEKtHB2x806AhGhv" target="_blank"><img class="linkedin" src="./img/Linked.png" alt="linkedin"></a></li> 
+                    <li><a href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.facebook.com/%3Flocale%3Des_LA&ved=2ahUKEwiCjJu25tKIAxU2ppUCHeZaOvMQFnoECAkQAQ&usg=AOvVaw1I60-Ja6y72-wCvsxEihv7" target="_blank"><img class="facebook" src="./img/facebook.png" alt="facebook"></a></li>
+                    <li><a href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.instagram.com/&ved=2ahUKEwijkYrC5tKIAxUvppUCHWAGGXYQFnoECAsQAQ&usg=AOvVaw1cBeRoOpMhZ3-x5M1sA3Fm" target="_blank"><img class="instagram" src="./img/Instagram.png" alt="instagram"></a></li>
+                    <li><a href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://m.youtube.com/%3Fhl%3Des&ved=2ahUKEwj-0be95tKIAxXjiJUCHYSuHvwQFnoECAsQAQ&usg=AOvVaw3zMzKvNQGAsWaZEJ7v5pXI" target="_blank"><img class="youtube" src="./img/Youtube.png" alt="youtube"></a></li>  
                 </ul>
             </div>
             <div class="contenedor_contacto">
-                <h4>Nosotros</h4>
-                <ul>
-                    
-                    <li><a href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://ar.linkedin.com/&ved=2ahUKEwimt9zL5tKIAxX6q5UCHRI9IXIQFnoECAsQAQ&usg=AOvVaw3WCPIlTEKtHB2x806AhGhv">Linkedln</a><img src="./img/Linked.png" alt="icono de twitter"></li>
-                    <li><a href="chrome://branding/content/firefox-wordmark.svg">Envianos un Mail</a></li>
-                    <li><abbr title="Travel Hno">THNO</abbr></li>
+                <h4>Cont&aacute;ctanos</h4>
+                <ul class="contactanos">
+                    <li><a title="Travel Hno">travelhnos@gmail.com</a></li>
                 </ul>
             </div>
             <div class="contenedor_metodos_pago">
-                <h4>Metodos de pago</h4>
+                <h4>M&eacute;todos de pago</h4>
                     <ul>
-                    <li><a href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.visa.com.ar/&ved=2ahUKEwjZl9LS5tKIAxUIrZUCHfJ0Ga0QFnoECBkQAQ&usg=AOvVaw0xqdVud793rlV7t1Qv96gG">VISA</a><img src="./img/icons8-visa-30.png" alt="ICONO VISA"  ></li>
-                    <li><a href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.mastercard.com.ar/es-ar.html&ved=2ahUKEwiw_9XY5tKIAxV8r5UCHcxFO4YQFnoECBcQAQ&usg=AOvVaw2fOrB-jqEIHZnPMn7Sw-iN">Mastercard</a><img src="./img/icons8-tarjeta-mastercard-30.png" alt="ICONO MASTERCARD"></li>
-                    <li><a href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.mercadopago.com.ar/&ved=2ahUKEwjbpN_g5tKIAxVAr5UCHfW_MQQQFnoECA0QAQ&usg=AOvVaw3RPvpESsI6fV-wWZHUWQ_D">Mercado Pago</a><img src="./img/mercadopago30px.png" alt="ICONO MERCADO PAGO"></li>
+                    <li><a href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.visa.com.ar/&ved=2ahUKEwjZl9LS5tKIAxUIrZUCHfJ0Ga0QFnoECBkQAQ&usg=AOvVaw0xqdVud793rlV7t1Qv96gG"></a><img class="visa" src="./img/icons8-visa-30.png" alt="visa"  ></li>
+                    <li><a href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.mastercard.com.ar/es-ar.html&ved=2ahUKEwiw_9XY5tKIAxV8r5UCHcxFO4YQFnoECBcQAQ&usg=AOvVaw2fOrB-jqEIHZnPMn7Sw-iN"></a><img class="mastercard" src="./img/icons8-tarjeta-mastercard-30.png" alt="mastercard"></li>
+                    <li><a href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.mercadopago.com.ar/&ved=2ahUKEwjbpN_g5tKIAxVAr5UCHfW_MQQQFnoECA0QAQ&usg=AOvVaw3RPvpESsI6fV-wWZHUWQ_D"></a><img class="mercadopago" src="./img/mercadopago30px.png" alt="mercadopago"></li>
                 </ul>
             </div>
         </div>
     </footer>
+
+    <!-- -->
+
+  <!--- SCRIPTS --->
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="js/jquery.js"></script>
+  <script src="js/jquery.superslides.js"></script>
+
+  <!--- --->
+
 </body>
+
 </html>
 
 
