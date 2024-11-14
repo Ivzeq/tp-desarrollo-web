@@ -10,7 +10,8 @@
 header {
   top: 0;
   width: 100%;
-  position: relative;
+  position: sticky;
+  z-index: 999;
 }
 
 body {
@@ -37,7 +38,6 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 1rem;
   font-size: large;
   list-style-type: none;
   background-color: #142b4d;
@@ -52,19 +52,15 @@ body {
 .section-link-container {
   display: flex;
   align-items: center;
-  margin-bottom: 12px;
+  justify-content: center;  
 }
 
 .section-link-container ul {
   display: flex;
   flex-direction: row;
+  align-items: center;
   gap: 1rem;
   list-style-type: none;
-}
-
-.section-link-container {
-  display: flex;
-  align-items: center;
 }
 
 .main-banner {
@@ -181,7 +177,6 @@ nav ul {
   margin: 0;
   padding: 0;
   float: right;
-  top: 20px;
   position: relative;
 }
 
@@ -596,4 +591,63 @@ h2 {
   width: 91px;
   height: 50px;
   padding-top: 5px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
 }
