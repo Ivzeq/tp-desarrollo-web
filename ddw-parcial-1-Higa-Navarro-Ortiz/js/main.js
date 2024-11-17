@@ -19,3 +19,20 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       });
 })
+
+// Funcionalidad para esconder navbar con scrolldown y mostrarla con scrollup
+
+let prevScrollpos = window.scrollY;
+
+window.addEventListener('scroll', function() {
+  let currentScrollPos = window.scrollY;
+  const navbar = document.querySelector('header');
+  
+  if (prevScrollpos > currentScrollPos) {
+    navbar.style.top = "0";
+  } else {
+    navbar.style.top = "-100px";
+  }
+  
+  prevScrollpos = currentScrollPos;
+});
