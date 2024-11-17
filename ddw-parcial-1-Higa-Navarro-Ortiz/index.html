@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Travel HNOS</title>
+    <link rel="icon", href="./img/company-logo.png">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/superslides.css">
     <script src="http://code.jquery.com/jquery-latest.js"></script>
@@ -25,7 +26,7 @@
                     <li><a href="#destinos">Destinos</a></li>
                     <li><a href="#footer">Contacto</a></li>
                     <label class="switch">
-                      <input type="checkbox">
+                      <input type="checkbox" id="themeSwitch">
                       <span class="slider round"></span>
                     </label>
                 </ul>
@@ -33,197 +34,199 @@
         </nav>
     </header>
     <main>
-        <section class="main-banner">
-            <div id="slides">
-                <ul class="slides-container">
-                  <li>
-                    <img src="./img/foto1.jpeg" alt="Bariloche">
-                    <div class="description">
-                        <h2 class="title_bariloche">Escapada a San Carlos de Bariloche</h2>
-                    </div>
-                  </li>
-                  <li>
-                    <img src="./img/foto2.jpeg" alt="San martin de los andes">
-                    <div class="description">
-                      <h2 class="title_sanmartin">Viajes a San Martin de Los Andes</h2>
-                    </div>
-                  </li>
-                  <li>
-                    <img src="./img/foto3.jpeg" alt="Glaciar perito moreno">
-                    <div class="description">
-                      <h2 class="title_peritomoreno">Escapada al Glaciar Perito Moreno</h2>
-                    </div>
-                  </li>
-                  <li>
-                    <img src="./img/foto4.jpeg" alt="Usuahia">
-                    <div class="description">
-                      <h2 class="title_usuahia">Viajes a Usuahia</h2>
-                    </div>
-                  </li>
-                </ul>
-          
-                <nav class="slides-navigation">
-                  <a href="#" class="next">&#62;</a>
-                  <a href="#" class="prev">&#60;</a>
-                </nav>
-              </div>
-        </section>
-
-    <section id="main">
-
-      <div id="nosotros" class="contenedor-about">
-        <div id="about">
-          <div class="contenedor-nosotros-tit scrollflow -slide-top -opacity">
-            <h2 class="title-nosotros">¿Qui&eacute;nes Somos?</h2>
-          </div>
-        </div>
-
-        <div class="contenedor-nosotros">
-          <section class="nosotros scrollflow -slide-top -opacity">
-            <article>
-              <p class="contenido_nosotros">
-                Somos una agencia y plataforma de reserva de viajes sostenible que conecta a viajeros conscientes con viajes de aventura.
-                Nuestra plataforma presenta una selección curada de viajes combinados sustentables diseñados y administrados por nuestros socios locales.
-                <br />
-                Nuestra agencia puede ayudarle a encontrar y reservar un viaje responsable a cualquier parte de la patagonia, o ayudarle a planificar su viaje sostenible.
-              </p>
-              <br />
-              <p class="contenido_nosotros">
-                Nuestra misión: 
-                <br />
-                Hacer que los viajes sostenibles sean fáciles.
-              </p>
-            </article>
-          </section>
-        </div>
-      </div>
-
-      <div id="nosotros" class="contenedor-about">
-        <div id="about">
-          <div class="contenedor-nosotros-tit scrollflow -slide-top -opacity">
-            <h2 class="title-nosotros">¿Qui&eacute;nes Somos?</h2>
-          </div>
-        </div>
-
-        <div class="contenedor-nosotros">
-          <section class="nosotros scrollflow -slide-top -opacity">
-            <article>
-              <p class="contenido_nosotros">
-                Somos una agencia y plataforma de reserva de viajes sostenible que conecta a viajeros conscientes con viajes de aventura.
-                Nuestra plataforma presenta una selección curada de viajes combinados sustentables diseñados y administrados por nuestros socios locales.
-                <br />
-                Nuestra agencia puede ayudarle a encontrar y reservar un viaje responsable a cualquier parte de la patagonia, o ayudarle a planificar su viaje sostenible.
-              </p>
-              <br />
-              <p class="contenido_nosotros">
-                Nuestra misión: 
-                <br />
-                Hacer que los viajes sostenibles sean fáciles.
-              </p>
-            </article>
-          </section>
-        </div>
-      </div>
-
-
-      <div id="ofrecemos" class="contenedor-ofrecemos">
-        <div id="ofrecemos2">
-          <div class="contenedor-ofrecemos-titulo scrollflow -slide-top -opacity">
-              <h2 class="ofrecemos-titulo">¿Qu&eacute; ofrecemos?</h2>
-          </div>
-        </div>
-
-
-          <section class="ofrecemos">
-            <div class="contenedor-ofrecemos">
-              <div class="experiencia  scrollflow -slide-top -opacity">
-                <figure class="perfil-pic scrollflow -slide-top -opacity">
-                <img class="img-experiencia" src="./img/foto5.jpeg" alt="experiencia">
-              </figure>
-                </br/></br/>
-                <div><p class="titulo-experiencia">Las experiencias m&aacute;s populares</p></div>
-              </div>
-              <div class="atracciones scrollflow -slide-top -opacity">
-                <figure class="perfil-pic scrollflow -slide-top -opacity">
-                <img class="img-atracciones"  src="./img/foto6.jpeg" alt="atracciones">
-              </figure>
-                </br/></br/>
-                <div><p class="titulo-atracciones">Las atracciones m&aacute;s populares</p></div>
-              </div>
+      <section class="main-banner">
+          <div id="slides">
+              <ul class="slides-container">
+                <li>
+                  <img src="./img/foto1.jpeg" alt="Bariloche">
+                  <div class="description">
+                      <h2 class="title_bariloche">Escapada a San Carlos de Bariloche</h2>
+                  </div>
+                </li>
+                <li>
+                  <img src="./img/foto2.jpeg" alt="San martin de los andes">
+                  <div class="description">
+                    <h2 class="title_sanmartin">Viajes a San Martin de Los Andes</h2>
+                  </div>
+                </li>
+                <li>
+                  <img src="./img/foto3.jpeg" alt="Glaciar perito moreno">
+                  <div class="description">
+                    <h2 class="title_peritomoreno">Escapada al Glaciar Perito Moreno</h2>
+                  </div>
+                </li>
+                <li>
+                  <img src="./img/foto4.jpeg" alt="Usuahia">
+                  <div class="description">
+                    <h2 class="title_usuahia">Viajes a Usuahia</h2>
+                  </div>
+                </li>
+              </ul>
+        
+              <nav class="slides-navigation">
+                <a href="#" class="next">&#62;</a>
+                <a href="#" class="prev">&#60;</a>
+              </nav>
             </div>
-            <div class="contenedor-ofrecemos2">
-              <div class="deseos scrollflow -slide-top -opacity">
-                <figure class="perfil-pic scrollflow -slide-top -opacity">
-                <img class="img-deseos" src="./img/foto7.jpeg" alt="deseos">
-              </figure>
-                </br/></br/>
-                <div><p class="titulo-deseos">Lista de deseos</p></div>
-              </div>
-              <div class="contenedor-cultural scrollflow -slide-top -opacity">
-                <figure class="perfil-pic scrollflow -slide-top -opacity">
-                <img class="img-cultural" src="./img/foto8.jpeg" alt="cultural">
-              </figure>
-                </br/></br/>
-                <div><p class="titulo-cultural">Cultural e hist&oacute;rico</p></div>
-              </div>
-          </section>
-        </div>
-    </section>
-    <section>
-      <div id="destinos" class="contenedor-servicios">
+      </section>
 
-        <div id="servicios">
-        <div class="contenedor-servicios-titulo scrollflow -slide-top -opacity">
-            <h2 class="servicios-titulo">Viaj&aacute; al Sur Argentino</h2>
+      <section id="main">
+
+        <div id="nosotros" class="contenedor-about">
+          <div id="about">
+            <div class="contenedor-nosotros-tit scrollflow -slide-top -opacity">
+              <h2 class="title-nosotros">¿Qui&eacute;nes Somos?</h2>
+            </div>
+          </div>
+
+          <div class="contenedor-nosotros">
+            <section class="nosotros scrollflow -slide-top -opacity">
+              <article>
+                <p class="contenido_nosotros">
+                  Somos una agencia y plataforma de reserva de viajes sostenible que conecta a viajeros conscientes con viajes de aventura.
+                  Nuestra plataforma presenta una selección curada de viajes combinados sustentables diseñados y administrados por nuestros socios locales.
+                  <br />
+                  Nuestra agencia puede ayudarle a encontrar y reservar un viaje responsable a cualquier parte de la patagonia, o ayudarle a planificar su viaje sostenible.
+                </p>
+                <br />
+                <p class="contenido_nosotros">
+                  Nuestra misión: 
+                  <br />
+                  Hacer que los viajes sostenibles sean fáciles.
+                </p>
+              </article>
+            </section>
+          </div>
         </div>
+
+        <div id="nosotros" class="contenedor-about">
+          <div id="about">
+            <div class="contenedor-nosotros-tit scrollflow -slide-top -opacity">
+              <h2 class="title-nosotros">¿Qui&eacute;nes Somos?</h2>
+            </div>
+          </div>
+
+          <div class="contenedor-nosotros">
+            <section class="nosotros scrollflow -slide-top -opacity">
+              <article>
+                <p class="contenido_nosotros">
+                  Somos una agencia y plataforma de reserva de viajes sostenible que conecta a viajeros conscientes con viajes de aventura.
+                  Nuestra plataforma presenta una selección curada de viajes combinados sustentables diseñados y administrados por nuestros socios locales.
+                  <br />
+                  Nuestra agencia puede ayudarle a encontrar y reservar un viaje responsable a cualquier parte de la patagonia, o ayudarle a planificar su viaje sostenible.
+                </p>
+                <br />
+                <p class="contenido_nosotros">
+                  Nuestra misión: 
+                  <br />
+                  Hacer que los viajes sostenibles sean fáciles.
+                </p>
+              </article>
+            </section>
+          </div>
+        </div>
+
+
+        <div id="ofrecemos" class="contenedor-ofrecemos">
+          <div id="ofrecemos2">
+            <div class="contenedor-ofrecemos-titulo scrollflow -slide-top -opacity">
+                <h2 class="ofrecemos-titulo">¿Qu&eacute; ofrecemos?</h2>
+            </div>
+          </div>
+
+
+            <section class="ofrecemos">
+              <div class="contenedor-ofrecemos">
+                <div class="experiencia  scrollflow -slide-top -opacity">
+                  <figure class="perfil-pic scrollflow -slide-top -opacity">
+                  <img class="img-experiencia" src="./img/foto5.jpeg" alt="experiencia">
+                </figure>
+                  </br/></br/>
+                  <div><p class="titulo-experiencia">Las experiencias m&aacute;s populares</p></div>
+                </div>
+                <div class="atracciones scrollflow -slide-top -opacity">
+                  <figure class="perfil-pic scrollflow -slide-top -opacity">
+                  <img class="img-atracciones"  src="./img/foto6.jpeg" alt="atracciones">
+                </figure>
+                  </br/></br/>
+                  <div><p class="titulo-atracciones">Las atracciones m&aacute;s populares</p></div>
+                </div>
+              </div>
+              <div class="contenedor-ofrecemos2">
+                <div class="deseos scrollflow -slide-top -opacity">
+                  <figure class="perfil-pic scrollflow -slide-top -opacity">
+                  <img class="img-deseos" src="./img/foto7.jpeg" alt="deseos">
+                </figure>
+                  </br/></br/>
+                  <div><p class="titulo-deseos">Lista de deseos</p></div>
+                </div>
+                <div class="contenedor-cultural scrollflow -slide-top -opacity">
+                  <figure class="perfil-pic scrollflow -slide-top -opacity">
+                  <img class="img-cultural" src="./img/foto8.jpeg" alt="cultural">
+                </figure>
+                  </br/></br/>
+                  <div><p class="titulo-cultural">Cultural e hist&oacute;rico</p></div>
+                </div>
+            </section>
+          </div>
+      </section>
+
+      <section>
+        <div id="destinos" class="contenedor-servicios">
+          <div id="servicios">
+            <div class="contenedor-servicios-titulo scrollflow -slide-top -opacity">
+                <h2 class="servicios-titulo">Viaj&aacute; al Sur Argentino</h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="cont-serv-img">
+          <div class="serv-img">
+            <div class="cont-disdev scrollflow -slide-top -opacity">
+              <h6 class="titulo-service">Bariloche</h6>
+              <br/>
+                <p class="serv-resumen">Es la ciudad más grande de la región, y el punto obligado para hacer base si te interesa el senderismo.
+
+                  Situada en las orillas del Lago Nahuel Huapi, es un paraíso con infinidad de opciones para explorarlo.
+                  
+                  Estando en Bariloche también podés visitar otros dos destinos cercanos que seguramente te encantarán: Villa La Angostura y San Martín de los Andes recorriendo la fantástica Ruta de los 7 lagos.</p>
+            </div>
+            <div class="cont-disdev scrollflow -slide-top -opacity">
+              <h6 class="titulo-service">San Martin de los Andes</h6>
+              <br/>
+                <p class="serv-resumen">Situado en la provincia de Neuquén y a orillas del Lago Lácar, San Martín de los Andes es uno de los lugares más lindos para visitar en Argentina. Su entorno natural, 
+                  rodeado de lagos y montañas, lo hace un destino ideal para cualquier época del año. Además, su ubicación estratégica hace que puedas combinar tu viaje con otros lugares imprescindibles de la región, 
+                  como Bariloche o Villa La Angostura.</p>
+            </div>
+            <div class="cont-disdev scrollflow -slide-top -opacity">
+              <h6 class="titulo-service">Glaciar Perito Moreno</h6>
+              <br/>
+                <p class="serv-resumen">En el vasto y diverso territorio de Argentina, un gigante de hielo se erige como una de las maravillas naturales más impresionantes del mundo: el Glaciar Perito Moreno. 
+                  Ubicado en la provincia de Santa Cruz, dentro del Parque Nacional Los Glaciares, este coloso helado no solo es un espectáculo para la vista, sino también un fascinante estudio de la naturaleza 
+                  y la ciencia en acción. 
+                </p>
+            </div>
+            <div class="cont-disdev scrollflow -slide-top -opacity">
+              <h6 class="titulo-service">Usuahia</h6>
+              <br/>
+                <p class="serv-resumen">Para muchos, llegar a Ushuaia es mucho más que un simple destino: es llegar a la ciudad más austral del mundo. El sur del sur, donde realmente uno puede sentir la magia.
+                  Ushuaia está en la Isla de Tierra del Fuego, y para llegar por tierra tendrás que pasar por una partecita de Chile. Situada justo sobre el Canal Beagle, 
+                  hacer una navegación por sus aguas es más que recomendable para poder ver cormoranes, lobos marinos y pingüinos.
+                </p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <div class="contenedor-patagonia">
+        <div class="patagonia">
+          <img src="./img/patagonia.jpeg" alt="foto16">
         </div>
       </div>
-
-      <div class="cont-serv-img">
-        <div class="serv-img">
-          <div class="cont-disdev scrollflow -slide-top -opacity">
-            <h6 class="titulo-service">Bariloche</h6>
-            <br/>
-              <p class="serv-resumen">Es la ciudad más grande de la región, y el punto obligado para hacer base si te interesa el senderismo.
-
-                Situada en las orillas del Lago Nahuel Huapi, es un paraíso con infinidad de opciones para explorarlo.
-                
-                Estando en Bariloche también podés visitar otros dos destinos cercanos que seguramente te encantarán: Villa La Angostura y San Martín de los Andes recorriendo la fantástica Ruta de los 7 lagos.</p>
-          </div>
-          <div class="cont-disdev scrollflow -slide-top -opacity">
-            <h6 class="titulo-service">San Martin de los Andes</h6>
-            <br/>
-              <p class="serv-resumen">Situado en la provincia de Neuquén y a orillas del Lago Lácar, San Martín de los Andes es uno de los lugares más lindos para visitar en Argentina. Su entorno natural, 
-                rodeado de lagos y montañas, lo hace un destino ideal para cualquier época del año. Además, su ubicación estratégica hace que puedas combinar tu viaje con otros lugares imprescindibles de la región, 
-                como Bariloche o Villa La Angostura.</p>
-          </div>
-          <div class="cont-disdev scrollflow -slide-top -opacity">
-            <h6 class="titulo-service">Glaciar Perito Moreno</h6>
-            <br/>
-              <p class="serv-resumen">En el vasto y diverso territorio de Argentina, un gigante de hielo se erige como una de las maravillas naturales más impresionantes del mundo: el Glaciar Perito Moreno. 
-                Ubicado en la provincia de Santa Cruz, dentro del Parque Nacional Los Glaciares, este coloso helado no solo es un espectáculo para la vista, sino también un fascinante estudio de la naturaleza 
-                y la ciencia en acción. 
-              </p>
-          </div>
-          <div class="cont-disdev scrollflow -slide-top -opacity">
-            <h6 class="titulo-service">Usuahia</h6>
-            <br/>
-              <p class="serv-resumen">Para muchos, llegar a Ushuaia es mucho más que un simple destino: es llegar a la ciudad más austral del mundo. El sur del sur, donde realmente uno puede sentir la magia.
-                Ushuaia está en la Isla de Tierra del Fuego, y para llegar por tierra tendrás que pasar por una partecita de Chile. Situada justo sobre el Canal Beagle, 
-                hacer una navegación por sus aguas es más que recomendable para poder ver cormoranes, lobos marinos y pingüinos.
-              </p>
-          </div>
-        </div>
-
-      </div>
-    </section>
     </main>
 
-    <div class="contenedor-patagonia">
-      <div class="patagonia">
-        <img src="./img/patagonia.jpeg" alt="foto16">
-      </div>
-    </div>
+    
 
     <!---FOOTER--->
 

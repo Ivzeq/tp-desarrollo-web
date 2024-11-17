@@ -518,7 +518,7 @@ h2 {
 }
 
 .contenedor-patagonia {
-  margin-bottom: 20px;
+  padding-bottom: 15px;
 }
 
 .patagonia {
@@ -651,4 +651,13 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+.dark {
+  background-color: #07203a;
+  color: whitesmoke;
+}
+
+.dark p {
+  color: whitesmoke;
 }
